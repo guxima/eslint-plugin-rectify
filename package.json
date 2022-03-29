@@ -13,7 +13,7 @@
     "dist/*"
   ],
   "scripts": {
-    "prepare": "esbuild ./lib/index.js ./lib/rules/**  --bundle --platform=node --outdir=dist --minify --analyze",
+    "prepare": "esbuild ./lib/index.js ./lib/rules/**  --bundle --platform=node --outdir=dist --minify --analyze --drop:debugger --drop:console",
     "lint": "eslint .",
     "test": "mocha tests --recursive"
   },
