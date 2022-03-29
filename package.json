@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-rectify",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "针对 Code Review 过程中发现的常见编码问题，不断完善一个能避免此类问题的 eslint-plugin",
   "keywords": [
     "eslint",
@@ -8,8 +8,10 @@
     "eslint-plugin"
   ],
   "author": "guxima",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
+  "files": ["dist/*"],
   "scripts": {
+    "prepare": "esbuild ./lib/index.js ./lib/rules/**  --bundle --platform=node --outdir=dist --minify --analyze",
     "lint": "eslint .",
     "test": "mocha tests --recursive"
   },
@@ -17,6 +19,7 @@
     "requireindex": "^1.2.0"
   },
   "devDependencies": {
+    "esbuild": "^0.14.28",
     "eslint": "^8.0.1",
     "eslint-plugin-eslint-plugin": "^4.0.1",
     "eslint-plugin-node": "^11.1.0",
