@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-rectify",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "针对 Code Review 过程中发现的常见编码问题，不断完善一个能避免此类问题的 eslint-plugin",
   "keywords": [
     "eslint",
