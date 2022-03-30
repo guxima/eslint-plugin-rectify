@@ -34,7 +34,9 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "rectify/rule-name": 2
+        "rectify/no-useless-concat": 2,
+        "rectify/no-string-regexp": 2,
+        "rectify/json-parse-risk": 2
     }
 }
 ```
