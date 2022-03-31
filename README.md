@@ -36,7 +36,8 @@ Then configure the rules you want to use under the rules section.
     "rules": {
         "rectify/no-useless-concat": 2,
         "rectify/no-string-regexp": 2,
-        "rectify/json-parse-risk": 2
+        "rectify/json-parse-risk": 2,
+        "rectify/no-default-sort": 2
     }
 }
 ```
