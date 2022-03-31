@@ -1,24 +1,24 @@
 # eslint-plugin-rectify
 
-eslint-plugin
+搜集平时 `code review` 过程中发现的编码问题，汇总提炼成 `eslint` 规则，提高复用性。
 
-## Installation
+## 安装
 
-You'll first need to install [ESLint](https://eslint.org/):
+首先需要安装 [ESLint](https://eslint.org/):
 
 ```sh
 npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-rectify`:
+接下来安装 `eslint-plugin-rectify`:
 
 ```sh
 npm install eslint-plugin-rectify --save-dev
 ```
 
-## Usage
+## 用法
 
-Add `rectify` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+增加 `rectify` 到 `.eslintrc` 配置文件的 `plugins` 节点，可以忽略 `eslint-plugin-` 前缀:
 
 ```json
 {
@@ -29,7 +29,7 @@ Add `rectify` to the plugins section of your `.eslintrc` configuration file. You
 ```
 
 
-Then configure the rules you want to use under the rules section.
+然后在 `rules` 节点下按需配置你要使用的规则。
 
 ```json
 {
@@ -42,8 +42,11 @@ Then configure the rules you want to use under the rules section.
 }
 ```
 
-## Supported Rules
+## 提供的所有规则
 
-* Fill in provided rules here
+* "rectify/no-useless-concat": 禁止无效的数组调用 `Array.concat()` 
+* "rectify/no-string-regexp": 禁止字符串替换时把正则当作字符串 `String.replace('/regexp/')`
+* "rectify/json-parse-risk": 禁止没有异常处理的调用 `JSON.parse()`
+* "rectify/no-default-sort": 禁止默认的数组排序方法 `Array.sort()`
 
 
